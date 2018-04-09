@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsLunchly</title>
+    <title>Rails Lunchly</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <app-root>Loading…</app-root>
+
+    <script type="text/javascript" src="/app/inline.bundle.js"></script>
+    <script type="text/javascript" src="/app/polyfills.bundle.js"></script>
+    <script type="text/javascript" src="/app/styles.bundle.js"></script>
+    <script type="text/javascript" src="/app/vendor.bundle.js"></script>
+    <script type="text/javascript" src="/app/main.bundle.js"></script>
   </body>
 </html>

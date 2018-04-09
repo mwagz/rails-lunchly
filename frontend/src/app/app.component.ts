@@ -9,13 +9,14 @@ import { HttpClient } from '@angular/common/http';
 
 export class AppComponent {
   users = [];
+
   constructor(private http:HttpClient) {
     this.getUsers();
   }
 
   getUsers() {
-    this.http.get('http://localhost:5000/users')
-      .subscribe(res => {
+    this.http.get('/users')
+      .subscribe((res: any) => {
         this.users = res.users;
       });
   }
