@@ -1,0 +1,2 @@
+web:          bundle exec rails s
+angular-cli:  cd frontend; npm start
