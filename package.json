@@ -1,5 +1,8 @@
 {
   "name": "rails-lunchly",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/cli": "^1.7.4"
+  }
 }
